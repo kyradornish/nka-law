@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>{% block title %}NKA Law{% endblock %}</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/static/main.css">
+</head>
+
+<body>
+    <div class="container main">
+        <div class="row">
+            <div class="container header">
+                <a href="/">
+                    <img src="http://placehold.it/300x80" alt="" class="img-responsive">
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="container">
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid nav">
+                        <ul class="nav navbar-nav">
+                            <li class="active">
+                                <a href="who">WHO WE ARE </a>
+                            </li>
+                            <span class="vertbar">&#124;</span>
+                            <li>
+                                <a href="who">WHAT WE DO</a>
+                            </li>
+                            <span class="vertbar">&#124;</span>
+                            <li>
+                                <a href="news">NEWS & EVENTS</a>
+                            </li>
+                            <span class="vertbar">&#124;</span>
+                            <li>
+                                <a href="where">WHERE WE WORK</a>
+                            </li>
+                            <span class="vertbar">&#124;</span>
+                            <li>
+                                <a href="contact">CONTACT US</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div id="login-buttons">
+                    {% if current_user.is_authenticated %}
+                    <a href="{{ url_for('profile') }}">Profile</a>
+                    <span class="log-vert-bar">&#124;</span>
+                    <a href="{{ url_for('logout') }}">Logout</a>
+                    {% else %}
+                    <a href="{{ url_for('login') }}">Login</a>
+                    <span class="log-vert-bar">&#124;</span>
+                    <a href="{{ url_for('register') }}">Register</a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+            {% for message in messages %}
+            <div class="alert alert-info" role="alert">
+                {{ message }}
+            </div>
+            {% endfor %}
+            {% endif %}
+        {% endwith %}
+
+        {% block content %}
+        {% endblock %}
+
+        <footer>
+            <div class="row">
+                <div class="container">
+                    <div class="col-md-12 bottomborder">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8 col-md-offset-4  footernav">
+                    <ul>
+                        <li>
+                            <a href="/">HOME</a>–</li>
+                        <li>
+                            <a href="who">WHO WE ARE</a>–</li>
+                        <li>
+                            <a href="who">WHAT WE DO</a>–</li>
+                        <li>
+                            <a href="news">NEWS & EVENTS</a>–</li>
+                        <li>
+                            <a href="where">WHERE WE WORK</a>–</li>
+                        <li>
+                            <a href="contact">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row footer">
+                <p>
+                    <br>
+                    <a href="#">©2018 This is not actually copyrighted</a> //
+                    <a href="http://www.kyradornish.com">Website done by Kyra Dornish</a>
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

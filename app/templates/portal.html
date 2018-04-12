@@ -1,0 +1,19 @@
+{% extends "layout.html" %} 
+
+{% block title %}{{ super() }} | Partner Portal{% endblock %} 
+
+{% block content %}
+<div class="row whowecontent">
+    <div class="col-md-3 content nopaddingright">
+        <div class="row leftpadding">
+            <img src="http://via.placeholder.com/200x200" alt="">
+        </div>
+    </div>
+    <div class="col-md-8 content">
+        <h2>Partner Portal</h2>
+        <hr>
+        <h4>{{ current_user.first_name }} {{ current_user.last_name }}</h4>
+    </div>
+</div>
+
+{% endblock %}

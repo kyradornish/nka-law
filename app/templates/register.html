@@ -1,0 +1,44 @@
+
+{% extends "layout.html" %} 
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block title %}{{ super() }} | Register{% endblock %} 
+
+{% block content %}
+
+<div class="row whowecontent">
+  <div class="col-md-3 content nopaddingright">
+    <div class="row whowe">
+      <h6>
+        <b>NEWS & EVENTS</b>
+        <h6>
+          <div class="row">
+            <div class="container">
+              <div class="col-md-12 newsborder">
+              </div>
+            </div>
+          </div>
+          <p>
+            <a href="news">Current</a>
+          </p>
+          <p>
+            <a href="contact">Archive</a>
+          </p>
+          <a href="contact">
+            <img src="http://nzalaw.com/images/content-navlink-directions.jpg" class="img-responsive" alt="Where we work map" />
+          </a>
+          <div class="nodecoration">
+            <a href="contact" class="nodecoration">
+              <b>Directions / Parking</b>
+              <br>Where to find us.</a>
+          </div>
+    </div>
+  </div>
+  <div class="col-md-5 content blacklink">
+
+    <h2>Register</h2>
+      {{ wtf.quick_form(form) }}
+
+  </div>
+
+{% endblock %}

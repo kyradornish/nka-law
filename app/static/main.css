@@ -1,0 +1,365 @@
+body {
+    background: url(http://nzalaw.com/images/nza_background.jpg)
+}
+
+.main {
+    width: 900px;
+    background-color: white;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 15px;
+    margin-bottom: 25px;
+}
+
+.header {
+    padding: 35px 80px 10px;
+}
+
+.nav {
+    flex-direction: row;
+    box-shadow: none;
+}
+
+.navbar ul {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 0.8em;
+    line-height: 30px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: black;
+    padding-left: 30px;
+    padding-right: 20px;
+    font-weight: 500;
+}
+
+.navbar ul li a:visited {
+    color: black;
+}
+
+.navbar ul li a:hover {
+    color: #91342f;
+}
+
+#login-buttons {
+    position: absolute;
+    top: 0px;
+    right: 18%;
+    padding: 3px 5px;
+    text-transform: uppercase;
+    font-size: 9px;
+    line-height: 31px;
+    font-weight: 500;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: lightgrey;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.log-vert-bar {
+    color: black;
+}
+
+#login-buttons a:hover {
+    color: #91342f;
+    text-decoration: none;
+}
+
+.vertbar {
+    color: lightgray;
+}
+
+.content {
+    margin-top: 10px;
+    padding-left: 31px;
+}
+
+.nopaddingleft {
+    padding-left: 10px;
+}
+
+.newsfeed {
+    background-color: #91342f;
+    color: white;
+    line-height: 1;
+    padding: 20px 15px 0px;
+    width: 87%;
+    max-height: 360px;
+    overflow: hidden;
+}
+
+.newsborder {
+    border-bottom: 2px solid lightgray;
+    margin-bottom: 10px;
+}
+
+.newsfeed p {
+    font-size: 11px;
+    font-weight: normal;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.leftpadding {
+    padding-left: 10px;
+}
+
+.table {
+    margin-top: 25px;
+    padding-left: 15px;
+}
+
+.table table{
+    border: 1px solid lightgray;
+}
+
+
+.table td{
+    padding: 5px;
+    vertical-align: middle;
+}
+
+.table a:hover{
+    text-decoration: None;
+}
+
+.table button{
+    font-size: 0.9em;
+}
+
+.alert-info {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.whowe {
+    background-image: url("http://nzalaw.com/images/nav_side_sub.jpg");
+    background-repeat: no-repeat;
+    color: white;
+    line-height: 1;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    width: 90%;
+    margin: 0;
+    background-size: cover;
+}
+
+.nopaddingright {
+    padding-right: 0px;
+}
+
+.whowe h6,
+a {
+    font-size: 12px;
+    font-weight: normal;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.whowe a:hover {
+    color: white;
+    font-weight: bold;
+    text-decoration-line: none;
+}
+
+.nodecoration a {
+    font-size: 11px;
+}
+
+.nodecoration a:hover {
+    font-weight: normal;
+}
+
+.whowecontent {
+    font-size: 12px;
+    font-weight: normal;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.whowecontent img {
+    padding-top: 10px;
+}
+
+h6 {
+    width: 100%;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+hr {
+    color: white;
+}
+
+.welcome {
+    margin-top: 30px;
+}
+
+.welcome p {
+    font-size: 12px;
+    font-weight: normal;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    line-height: 1.2em;
+}
+
+.contactinfo p {
+    padding-left: 15px;
+}
+
+.contactinfo p {
+    font-size: 10px;
+    font-weight: normal;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    line-height: 1.2em;
+}
+
+.contactinfo a {
+    font-size: 10px;
+    color: #91342f;
+    text-decoration: underline;
+}
+
+.middlecontent {
+    font-size: 12px;
+    line-height: 1.2em;
+}
+
+.locations {
+    padding-top: 50px;
+    line-height: 1.2em;
+}
+
+.middlecontent a {
+    color: black;
+    text-decoration-line: underline;
+}
+
+.middlecontent a:hover {
+    color: #91342f;
+}
+
+.middleimg img {
+    padding-left: 15px;
+}
+
+.floatleft {
+    float: left;
+    padding: 0;
+}
+
+.content h1, h4 {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+}
+
+.attorneycontent {
+    padding-top: 15px;
+    padding-left: 0;
+    padding-right: 0;
+    display: block;
+}
+
+.attorneycontent img {
+    padding-top: 0px;
+}
+
+.attorneyinfo {
+    padding-left: 10px;
+    float: left;
+    font-size: 10px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.attorneyinfo a {
+    font-size: 10px;
+}
+
+.grayside {
+    background-image: url("http://nzalaw.com/images/other_links_background.jpg");
+    width: 100%;
+    margin-left: 30px;
+    margin-bottom: 200px;
+    padding-bottom: 10px;
+}
+
+.grayside a {
+    color: black;
+    line-height: 1.2em;
+    font-size: 10px;
+}
+
+.grayside a:hover {
+    text-decoration: none;
+}
+
+.bottomborder {
+    border-bottom: 1px solid black;
+    margin-left: 15px;
+    margin-right: 16px;
+    width: 830px;
+    padding-top: 40px;
+}
+
+.footernav {
+    margin: 0 auto;
+}
+
+.footernav ul {
+    list-style-type: none;
+    justify-content: space-between;
+}
+
+.footernav li {
+    float: left;
+    display: block;
+    color: lightgray;
+}
+
+.footernav li a {
+    font-size: 10px;
+    font-weight: normal;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    color: black;
+    padding: 4px;
+}
+
+.footernav ul li a:hover {
+    color: #91342f;
+    text-decoration: none;
+}
+
+.footer p {
+    font-size: 10px;
+    font-weight: normal;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    color: lightgray;
+    margin: 0 auto;
+}
+
+.footer a {
+    color: lightgray;
+    font-size: 10px;
+}
+
+.footer a:hover {
+    color: #91342f;
+    text-decoration: none;
+}
+
+.blacklink li{
+    list-style: none;
+    float: left;
+    padding: 5px;
+}
+
+.blacklink a {
+    color: black;
+}
+
+.blacklink a:hover {
+    color: #91342f;
+    text-decoration: none;
+}

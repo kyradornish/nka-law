@@ -1,0 +1,29 @@
+{% extends "layout.html" %} 
+
+{% block title %}{{ super() }} | News{% endblock %} 
+
+{% block content %}
+<div class="row whowecontent">
+    <div class="col-md-3 content nopaddingright">
+        <div class="row leftpadding">
+            <img src="http://via.placeholder.com/200x200" alt="">
+        </div>
+    </div>
+    <div class="col-md-8 content">
+        <h4>Hi {{ current_user.first_name }}</h4>
+        <hr>
+
+        {% if role.roles.id == 3 %}
+            <button type="button" class="btn btn-default">      
+                <a href="{{ url_for('admin_manage_user') }}" style="color: black; text-decoration: none;">Manage Users</a>
+            </button>
+        {% endif %}
+        {% if role.roles.id == 2 %}
+            <button type="button" class="btn btn-default">
+                <a href="{{ url_for('portal') }}" style="color: black; text-decoration: none;">Partner Portal</a>
+            </button>
+        {% endif %}
+    </div>
+</div>
+
+{% endblock %}
